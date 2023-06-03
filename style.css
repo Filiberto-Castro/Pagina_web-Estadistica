@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@500;600&display=swap');
+
+/* Estilos generales */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color: #337ab7;
+    --text-color: #fff;
+    --main-color: #FFA500;
+    --two-main-color: #ffffffcc;
+    --big-font: 3rem;
+    --h2-font: 1.8rem;
+    --p-font: 1.5rem;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del menú de navegación */
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  padding: 20px 12%;
+  transition: all .50s ease;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  color: var(--text-color);
+  font-size: 28px;
+  margin-right: 3px;
+  height: 32px;
+}
+
+.logo span{
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: all .50s ease;
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar a{
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all .50s ease;
+}
+
+.navbar a:hover{
+  color: var(--main-color);
+}
+
+.navbar a.active{
+  color: var(--main-color);
+}
+
+span:hover{
+  color: var(--main-color);
+}
+
+.main a:hover{
+  color: var(--main-color);
+}
+
+#menu-icon{
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+section{
+  padding: 100px 14%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Estilos para la sección de inicio */
+
+#inicio {
+    position: relative;
+    background-color: #f2f2f2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: var(--h2-font);
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: var(--p-font);
+    color: #666;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Estilos para la sección de descripción del curso */
+
+#descripcion-curso {
+    display: grid;
+    background-color: #f9f9f9;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #23527c;
+}
+
+/* SECTION ABOUT */
+.about{
+  background-color: #f2f2f2;
+}
+
+.about-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 4.4rem;
+}
+
+.about-img img{
+  max-width: 100%;
+  width: 20rem;
+  height: auto;
+}
+.about-text{
+  display: inline-block;
+  text-align: justify;
+}
+
+.about-text h2{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: var(--h2-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+}
+.about-text p{
+  font-size: var(--p-font);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.center{
+  text-align: center;
+}
+
+.center h3{
+  color: var(--bg-color);
+  font-size: var(--big-font);
+  font-weight: 300;
+  letter-spacing: 6px;
+}
+
+.btn{
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 0 25px;
+  line-height: 42px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: transform 0.35s ease;
+}
+
+.btn:hover{
+  transform: scale(1.2);
+  background: var(--text-color);
+  color: var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+}
+
+/* SECTION PORTFOLIO */
+#portfolio {
+  padding: 80px 35px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+#portfolio h2 {
+  color: var(--bg-color);
+  font-size: var(--big-font);
+  font-weight: 300;
+  letter-spacing: 6px;
+}
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: normal;
+  margin-top: 4.4rem;
+  justify-content: center;
+}
+.portfolio-item {
+  margin: 20px;
+  max-width: 200px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all .50s ease;
+}
+.portfolio-item img {
+  width: 50%;
+  object-fit: cover;
+}
+.portfolio-item h3 {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+  color: var(--main-color);
+}
+.portfolio-item a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+.portfolio-item:hover {
+  background-color: var(--bg-color);
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+}
+
+/* SECTION TEMAS */
+.temas{
+  padding: 80px 80px;
+  text-align: center;
+  background-color: #f9f9f9;
+  
+}
+
+.temas h2{
+  color: var(--bg-color);
+  font-size: var(--h2-font);
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.titulo{
+  margin: 20px;
+  padding: 20px;
+  background-color: #d1e7dd;
+  border-radius: 25px;
+}
+
+.subtema{
+  text-align: start;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 50px;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.listas{
+  font-size: 20px;
+  margin: 8px;
+  padding-left: 50px;
+}
+
+.contenido{
+  font-size: var(--p-font);
+  color: #666;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.ejemplos{
+  text-align: start;
+  font-size: 24px;
+  color: #666;
+}
+
+iframe{
+  border-radius: 25px;
+  margin: 20px;
+}
+
+/* SECTION DISCRETA */
+
+#discreta{
+  background-color: #f2f2f2;
+}
+
+/* SECTION PROBABILIDAD */
+
+#probabilidad{
+  background-color: #f2f2f2;
+}
+
+#factorial{
+  background-color: #f2f2f2;
+}
+
+/* Estilos del pie de página */
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    clear: both; /* Agrega esta línea para solucionar el problema */
+  }
+  
+footer p {
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+    height: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1280px){
+  header{
+    padding: 14px 2%;
+    transition: .2s;
+  }
+  .navbar a{
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+  #portfolio {
+    padding: 100px 3%;
+  }
+  .portfolio-items{
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+  
+}
+
+@media (max-width: 1090px){
+  #menu-icon{
+    display: contents;
+  }
+  #inicio{
+    grid-template-columns: 1fr;
+  }
+  .home-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container img{
+    max-width: 60%;
+    max-height: 60%;
+    width: auto;
+    height: auto;
+  }
+  .navbar{
+    position:absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    background: var(--main-color);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+  .navbar a{
+    display:block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover{
+    color: var(--text-color);
+    transform: translateY(5px);
+  }
+  .navbar a.active{
+    color: var(--text-color);
+  }
+  .navbar.open{
+    right: 2%;
+  }
+  .row{
+    padding: 0;
+  }
+  :root{
+    --big-font: 3rem;
+    --h2-font: 1.2rem;
+    --p-font: 0.9rem;
+  }
+  
+}
+
+/* Ajuste para dispositivos moviles */
+
+@media (max-width: 830px){
+  header{
+    padding: 18px 3%;
+  }
+  #menu-icon{
+    display: contents;
+  }
+  .navbar{
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background: #0b0b13;
+    box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+    text-align: left;
+    transition: 0.2s ease;
+  }
+  .navbar a{
+    display: block;
+    padding: 1rem;
+    border-left: 2px solid var(--main-color);
+    margin: 1rem;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .navbar a:hover{
+    background: var(--main-color);
+  }
+  .navbar.open{
+    top: 100%;
+  }
+  .listas{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 795px){
+  #inicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .container p{
+    max-width: 100%;
+  }
+
+  .container img{
+    max-width: 100%;
+    width: 490px;
+    height: auto;
+  }
+
+  #descripcion-curso{
+    text-align: center;
+  }
+
+  .about-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-text h2{
+    max-width: 100%;
+  }
+  .about-text p{
+    max-width: 100%;
+  }
+  .about-img{
+    order: 2;
+  }
+  .portfolio-items {
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
+  }
+}

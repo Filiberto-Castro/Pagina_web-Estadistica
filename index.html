@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/src/icon.png" type="image/png">
+  <title>Estadística II - UMG</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+      <a href="https://umg.edu.gt/" target="_blank" class="logo" rel="noopener noreferrer"><img src="/umg_logo.png"></img><span>Estadística II</span></a>
+      <ul class="navbar">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">UMG</a></li>
+        <li><a href="#portfolio">Temas</a></li>
+      </ul>
+      <div class="main">
+        <a class="btn" href="https://umg.edu.gt/" target="_blank" rel="noopener noreferrer">Contacto</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+  </header>
+
+  <section id="inicio">
+    <div class="container">
+        <h2>Bienvenido a la página de Estadística II</h2>
+        <p>¡Aprende y domina los conceptos de Estadística II de manera clara y concisa!</p>
+        <a href="#about" class="btn">Aprende más</a>
+    </div>
+    <div>
+        <img src="/src/statistics.png" alt="">
+    </div>
+  </section>
+
+  <!-- TODO: Seccion de descripcion -->
+  <section id="descripcion-curso">
+    <div>
+        <img src="/src/bar-chart.png" alt="">
+    </div>  
+    <div class="container">
+      <h2>Curso de Estadística II</h2>
+      <p>En este curso avanzado de Estadística, exploraremos temas como regresión lineal, análisis de varianza, distribuciones de probabilidad y más. Aprenderás las herramientas y técnicas necesarias para analizar y comprender datos complejos.</p>
+      <a href="#portfolio" class="btn">Ver temario</a>
+    </div>
+  </section>
+  
+  
+
+  <!-- TODO: About Section Start -->
+  <section class="about" id="about">
+    <div class="center">
+      <h3>SOBRE UMG</h3>
+    </div>
+
+    <div class="about-content">
+      <div class="row">
+        <div class="about-img">
+          <img src="/umg_logo.png">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="about-text">
+          <h2>Universidad Mariano Gálvez de Guatemala,</h2>
+          <p> es una institución de educación superior, privada, independiente, no lucrativa, que funciona de acuerdo con las leyes propias de su naturaleza institucional, aprobada el 29 de enero de 1966 por el Consejo Supremo Universitario de la Universidad de San Carlos de Guatemala.</p>
+      
+        </div>
+        <div class="main-btn">
+          <a href="https://umg.edu.gt/" class="btn" target="_blank" rel="noopener noreferrer">Contácteme</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- TODO: Portfolio Section Start -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>TEMAS</h2>
+      <div class="portfolio-items">
+
+        <div class="portfolio-item">
+          <a href="#discreta">
+            <img src="/src/dados.png" alt="Variables Aleatorias Discretas">
+            <h3>Variables Aleatorias Discretas</h3>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="#continua">
+            <img src="/src/histogram.png" alt="Variables Aleatorias Continuas">
+            <h3>Variables Aleatorias Continuas</h3>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="#probabilidad">
+            <img src="/src/probabilidad.png" alt="Función de probabilidad de una variable aleatoria discreta">
+            <h3>Función de probabilidad de una variable aleatoria discreta</h3>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="#binomial">
+            <img src="/src/binomial.png" alt="Distribución Binomial">
+            <h3>Distribución Binomial</h3>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="#factorial">
+            <img src="/src/factorial.png" alt="Factorial">
+            <h3>Factorial de un número y sus propiedades</h3>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section End -->
+
+  <!-- TODO: Temas -->
+  <section id="discreta" class="temas">
+      <h2 class="titulo">Variable Aleatoria Discreta</h2>
+      <p class="contenido">En estadística, una variable aleatoria discreta es aquella que toma valores aislados y contables. Esto significa que solo puede tomar un número finito o infinito numerable de valores posibles. A diferencia de una variable continua, que puede tomar cualquier valor dentro de un intervalo, una variable aleatoria discreta solo puede tomar valores específicos.</p>
+      <p class="contenido">Un ejemplo común de variable aleatoria discreta es el lanzamiento de un dado. En este caso, la variable representa el número que aparece en la cara superior del dado. Los posibles valores para esta variable son 1, 2, 3, 4, 5 y 6, y cada uno de estos valores tiene una probabilidad asociada.</p>
+      <p class="contenido">La distribución de probabilidad de una variable aleatoria discreta se puede representar mediante una función de masa de probabilidad (FMP) o mediante un histograma. La FMP asigna una probabilidad a cada posible valor de la variable, mientras que el histograma muestra la frecuencia de cada valor.</p>
+      <p class="contenido">Algunas medidas estadísticas comunes para variables aleatorias discretas incluyen la media, la varianza y la desviación estándar. Estas medidas proporcionan información sobre la tendencia central y la dispersión de los valores de la variable.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_wonmKS4Blk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section id="continua" class="temas">
+    <h2 class="titulo">Variable Aleatoria Continua</h2>
+    <p class="contenido">En estadística, una variable aleatoria continua es aquella que puede tomar cualquier valor dentro de un intervalo. A diferencia de una variable aleatoria discreta, que solo puede tomar valores específicos, una variable aleatoria continua tiene una infinidad de valores posibles en un rango continuo.</p>
+    <p class="contenido">Un ejemplo común de variable aleatoria continua es la altura de las personas. En este caso, la variable puede tomar cualquier valor real en un rango continuo, como 1.65 metros, 1.75 metros o cualquier otro valor dentro del intervalo.</p>
+    <p class="contenido">La distribución de probabilidad de una variable aleatoria continua se describe mediante una función de densidad de probabilidad (FDP) o una función de distribución acumulativa (FDA). La FDP proporciona la probabilidad relativa de que la variable aleatoria caiga en un rango específico, mientras que la FDA indica la probabilidad de que la variable aleatoria sea menor o igual a un valor determinado.</p>
+    <p class="contenido">Algunas medidas estadísticas comunes para variables aleatorias continuas incluyen la media, la mediana, la varianza y la desviación estándar. Estas medidas proporcionan información sobre la tendencia central y la dispersión de los valores de la variable.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4d5rKHdzS10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 class="subtema">Media</h2>
+    <p class="contenido">La media es una medida estadística que representa el valor promedio de un conjunto de datos. Se calcula sumando todos los valores y dividiendo la suma total entre el número de datos.</p>
+    <p class="contenido"><span>Ejemplo:</span> Supongamos que tenemos un conjunto de datos que representa las edades de un grupo de personas: 25, 30, 35, 40 y 45. Para calcular la media, sumamos todos los valores (25 + 30 + 35 + 40 + 45 = 175) y luego dividimos entre el número de datos (5). La media en este caso sería 35.</p>
+    <h2 class="subtema">Mediana</h2>
+    <p class="contenido">La mediana es el valor que se encuentra en el centro de un conjunto de datos ordenados de menor a mayor. Si el número de datos es impar, la mediana es el valor del medio. Si el número de datos es par, la mediana es el promedio de los dos valores del centro.</p>
+    <p class="contenido"><span>Ejemplo:</span> Usando el mismo conjunto de edades: 25, 30, 35, 40 y 45. Al ordenar los datos de menor a mayor, obtenemos: 25, 30, 35, 40, 45. La mediana sería el valor del medio, que en este caso es 35.</p>
+    <h2 class="subtema">Varianza</h2>
+    <p class="contenido">La varianza es una medida de dispersión que indica qué tan dispersos están los valores de un conjunto de datos alrededor de la media. Se calcula tomando la diferencia entre cada valor y la media, elevando al cuadrado esos valores y luego calculando el promedio de las diferencias al cuadrado.</p>
+    <p class="contenido"><span>Ejemplo:</span> Usando el mismo conjunto de edades, supongamos que la media es 35. Calculamos la diferencia entre cada edad y la media, elevamos al cuadrado esos valores, y luego calculamos el promedio de las diferencias al cuadrado. Supongamos que las diferencias al cuadrado son: 100, 25, 0, 25, 100. El promedio de estas diferencias al cuadrado sería 50, que representa la varianza.</p>
+    <h2 class="subtema">Desviación estándar</h2>
+    <p class="contenido">La desviación estándar es otra medida de dispersión que indica cuánto se desvían los valores de un conjunto de datos respecto a la media. Es la raíz cuadrada de la varianza.</p>
+    <p class="contenido"><span>Ejemplo:</span> Usando el mismo conjunto de edades y la varianza calculada anteriormente (varianza = 50), la desviación estándar sería la raíz cuadrada de la varianza, es decir, √50, que aproximadamente es 7.07.</p>
+  </section>
+
+  <section id="probabilidad" class="temas">
+    <h2 class="titulo">Función de probabilidad de una variable aleatoria discreta</h2>
+    <p class="contenido">Una función de probabilidad de una variable aleatoria discreta es una función que asigna probabilidades a los valores de la variable aleatoria.</p>
+    <p class="contenido">Describe la distribución de probabilidad de los posibles valores que puede tomar dicha variable. Esta función asigna una probabilidad a cada valor individual y satisface dos propiedades: que cada probabilidad sea no negativa y que la suma de todas las probabilidades sea igual a 1.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7mF89j-rCoE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section id="binomial" class="temas">
+    <h2 class="titulo">Distribución binomial</h2>
+    <p class="contenido">Existen una gran diversidad de experimentos o sucesos que pueden ser caracterizados bajo esta distribución de probabilidad. Imaginemos el lanzamiento de una moneda en el que definimos el suceso “sacar cara” como el éxito. Si lanzamos 5 veces la moneda y contamos los éxitos (sacar cara) que obtenemos, nuestra distribución de probabilidades se ajustaría a una distribución binomial.</p>
+    <p class="contenido">Por lo tanto, la distribución binomial se entiende como una serie de pruebas o ensayos en la que solo podemos tener 2 resultados (éxito o fracaso), siendo el éxito nuestra variable aleatoria.</p>
+    <h2 class="subtema">Propiedades de la distribución binomial</h2>
+    <p class="listas">1. En cada ensayo, experimento o prueba solo son posibles dos resultados (éxito o fracaso).</p>
+    <p class="listas">2. La probabilidad del éxito ha de ser constante. Esta se representa mediante la letra p. La probabilidad de que salga cara al lanzar una moneda es 0,5 y esta es constante dado que la moneda no cambia en cada experimento y las probabilidades de sacar cara son constantes.</p>
+    <p class="listas">3. La probabilidad de fracaso ha de ser también constate. Esta se representa mediante la letra q = 1-p. Es importante fijarse que mediante esa ecuación, sabiendo p o sabiendo q, podemos obtener la que nos falte.</p>
+    <p class="listas">4. El resultado obtenido en cada experimento es independiente del anterior. Por lo tanto, lo que ocurra en cada experimento no afecta a los siguientes.</p>
+    <p class="listas">5. Los sucesos son mutuamente excluyentes, es decir, no pueden ocurrir los 2 al mismo tiempo. No se puede ser hombre y mujer al mismo tiempo o que al lanzar una moneda salga cara y cruz al mismo tiempo.</p>
+    <p class="listas">6. Los sucesos son colectivamente exhaustivos, es decir, al menos uno de los 2 ha de ocurrir. Si no se es hombre, se es mujer y, si se lanza una moneda, si no sale cara ha de salir cruz.</p>
+    <p class="listas">7. La variable aleatoria que sigue una distribución binomial se suele representar como X~(n,p), donde n representa el número de ensayos o experimentos y p la probabilidad de éxito.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EisaSQ1j_Kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section id="factorial" class="temas">
+    <h2 class="titulo">Factorial de un número y sus propiedades</h2>
+    <p>El factorial de un número entero positivo, denotado como n!, es el producto de todos los números enteros positivos desde 1 hasta el número dado. Se utiliza con frecuencia en matemáticas y combinatoria para calcular el número de permutaciones y combinaciones posibles.</p>
+    <p>Por ejemplo, el factorial de 5 se denota como 5! y se calcula de la siguiente manera:</p>
+    <p>5! = 5 × 4 × 3 × 2 × 1 = 120</p>
+    <h2 class="subtema">Propiedades del factorial:</h2>
+    <p class="listas">1. Producto de números consecutivos: El factorial de un número n se puede expresar como el producto de todos los números enteros positivos desde 1 hasta n.
+      n! = n × (n-1) × (n-2) × ... × 3 × 2 × 1</p>
+    <p class="listas">2. Valor del factorial de 0: Por convención, el factorial de 0 se define como 1.
+      0! = 1</p>
+    <p class="listas">3. Recursividad: El factorial de un número se puede definir recursivamente utilizando la siguiente fórmula:
+      n! = n × (n-1)!</p>
+    <p class="listas">4. Relación con la permutación: El factorial se utiliza en el cálculo del número de permutaciones posibles de un conjunto de elementos. Si hay n elementos, el número de permutaciones posibles es n!.</p>
+    <p class="listas">5. Propiedad de la multiplicación: El factorial de un número se puede expresar como el producto del número multiplicado por el factorial del número anterior.
+      n! = n × (n-1)!</p>
+    <p class="listas">6. Crecimiento exponencial: El factorial de un número crece rápidamente a medida que el número aumenta. El crecimiento es factorial, lo que significa que el valor del factorial de n es mucho mayor que el factorial de n-1.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BKHBESHjGEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Universidad de Mariano Gálvez - Curso de Estadística II</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript externo aquí -->
+</body>
+</html>
