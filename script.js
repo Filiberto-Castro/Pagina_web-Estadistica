@@ -22,7 +22,7 @@ function mostrarTexto() {
     
     contador++;
     
-    setTimeout(mostrarTexto, 100); // Puedes ajustar el tiempo según tu preferencia
+    setTimeout(mostrarTexto, 100);
   }
 }
 

@@ -349,6 +349,11 @@ p {
   color: #666;
 }
 
+.formulas{
+  width: 200px;
+  margin: 30px;
+}
+
 iframe{
   border-radius: 25px;
   margin: 20px;
