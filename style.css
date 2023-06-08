@@ -24,7 +24,7 @@
 body{
     display: grid;
     min-height: 100vh;
-    background-color: var(--bg-color);
+    background-color: #fff;
     color: var(--bg-color);
 }
 
@@ -89,6 +89,11 @@ header{
   color: var(--main-color);
 }
 
+.navbar i{
+  font-size: 25px;
+  padding-right: 4px;
+}
+
 span:hover{
   color: var(--main-color);
 }
@@ -115,7 +120,7 @@ section{
 
 #inicio {
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #fff;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -161,7 +166,6 @@ p {
 
 #descripcion-curso {
     display: grid;
-    background-color: #f9f9f9;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 2rem;
     align-items: center;
@@ -182,9 +186,6 @@ p {
 }
 
 /* SECTION ABOUT */
-.about{
-  background-color: #f2f2f2;
-}
 
 .about-content{
   display: grid;
@@ -253,7 +254,6 @@ p {
 #portfolio {
   padding: 80px 35px;
   text-align: center;
-  background-color: #f9f9f9;
 }
 #portfolio h2 {
   color: var(--bg-color);
@@ -302,8 +302,6 @@ p {
 .temas{
   padding: 80px 80px;
   text-align: center;
-  background-color: #f9f9f9;
-  
 }
 
 .temas h2{
@@ -358,25 +356,6 @@ p {
 iframe{
   border-radius: 25px;
   margin: 20px;
-}
-
-/* SECTION DISCRETA */
-
-#discreta{
-  background-color: #f2f2f2;
-}
-
-/* SECTION PROBABILIDAD */
-
-#probabilidad{
-  background-color: #f2f2f2;
-}
-
-#distribucion{
-  background-color: #f2f2f2;
-}
-
-#factorial{
 }
 
 /* Estilos del pie de página */
